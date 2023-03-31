@@ -1,0 +1,29 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    background-color: black;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:#865DFF;
+}
+#logo{
+width: 80px;
+height: auto;
+border-radius:100%;
+border:solid 2px;
+color:#E384FF;
+}
+.main-inicio{
+    background-color: #E384FF;
+    max-width: 100%;
+}
+.img-inicio{
+max-width: 100%;
+border-top:dotted 5PX red;
+border-left: solid 5PX red;
+
+}
