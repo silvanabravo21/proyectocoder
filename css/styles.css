@@ -6,27 +6,116 @@ body{
     background-color:black;
     color:white;
 }
+header{
+    background-color: #191825;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .9;
+    position: sticky;
+    top: 0;
+}
+header img{
+    width: 65px;
+    height: 75px;
+    border:solid 2px  #6e5d74;
+   
+    }
+ul{
+    list-style: none;
+}
+nav ul{
+   display: flex;
+   gap: 20px;
+}
 a{
     text-decoration: none;
-    color:#865DFF;
 }
-#logo{
-width: 80px;
-height: auto;
-border-radius:100%;
-border:solid 2px;
-color:#E384FF;
+.enlaces{
+    color: #FFA3FD;
+    background-color: #6e5d74;
+    padding: 10px 15px;
 }
-.main-inicio{
-    background-color: #E384FF;
-    max-width: 100%;
+.banner{
+    background-image: url(../img/nail-rojo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
 }
-.img-inicio{
-max-width: 100%;
-border: solid 5PX red;
-}
-.img-inicio img{
-width: 300px;
-height: 300px;
+main{
+margin: 80px 0;
 }
 
+.parrafo-main{
+   margin: 0 auto;
+    width: 85%;
+}
+img{
+   max-width: 100%;
+   
+}
+.inicio{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap: wrap;
+
+
+}
+
+.img-inicio{
+    width: 620px;
+    background-color: #E384FF;
+    color: #191825;
+    padding: 30px 50px;
+}
+
+.main-inicio h1{   
+  padding: 50px 30px;
+    font-family: Yellowtail;
+    text-align: center;
+    text-shadow:0 0 5px #865DFF;
+    color:#E384FF;
+    font-size: 80px;
+    font-weight: 800;
+
+}
+.main-inicio h2, h3, h4{
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 10px;
+    color:white;
+    text-shadow:0 0 3px #865DFF;
+    font-family:Libre Baskerville ;  
+}
+.main-inicio p{
+    padding: auto;
+    color: #191825;
+    font-family: Dancing Script;
+font-size: 30px;
+font-weight: 100;
+}
+.texto-grande h3, h4{
+    padding: 20px 10px;  
+color:#865DFF;
+    font-size: 30px;
+    font-weight: 100;   
+}
+footer{
+    background-color:#191825;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa, .whatsapp{
+width: 40px;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+
+}
