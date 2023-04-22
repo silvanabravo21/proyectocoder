@@ -7,20 +7,41 @@ body{
     color:rgb(3, 3, 3);
 }
 header{
-    background-color: #F6C6EA;
     display: flex;
+    flex-direction: column;
+    position: relative;
+    top:0;
+    z-index: 1;
+    background-color: #f39adc;
     justify-content: space-around;
+    width: 100%;
     align-items: center;
     opacity: .9;
-    position: sticky;
-    top: 0;
+   gap: 20px;
 }
-header img{
-    width: 65px;
-    height: 75px;
-    border:solid 2px #F5B5FC;
-   
+@media (min-width:768px){
+    header{
+        flex-direction: row;
+        position: sticky;
     }
+}
+.logo{
+    width: 120px;
+   
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+@media(min-width: 500px){
+    .menu{
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
 ul{
     list-style: none;
 }
@@ -34,29 +55,22 @@ a{
 .enlaces{
     color: #F0F696;
     text-shadow:0 0 5px #191825;
-    border-radius: 5px;
+    border-radius: 2px;
     background-color: #F5B5FC;
     border: solid;
     padding: 10px 15px;
 }
 .banner{
-    background-image: url(../img/nail-rojo.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 600px;
-    width: 100%;
-}
-main{
-margin: 80px 0;
-}
-
-.parrafo-main{
-   margin: 0 auto;
-    width: 85%;
-}
+        background-image: url(../img/foto-portada.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 500px;
+        width: 100%;
+}  
 img{
    max-width: 100%;
+   
    
 }
 .inicio{
@@ -64,35 +78,53 @@ display:flex;
 justify-content:center;
 align-items:center;
 flex-wrap: wrap;
-
-
 }
+/*informacion**/
 
 .img-inicio{
-    width: 620px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
     background-color: #E384FF;
     color: #191825;
-    padding: 30px 50px;
+   gap: 30px;
 }
-
-.main-inicio h1{   
-  padding: 50px 30px;
+@media(max-width:500px){
+   .img-inicio{
+    flex-wrap: wrap;
+   } 
+}
+main img{
+    width: 350px;
+justify-content: center;
+  
+}
+h1{   
+  padding: 20px 30px;
     font-family: Yellowtail;
     text-align: center;
-    text-shadow:0 0 5px #865DFF;
-    color:#E384FF;
+    color:black;
     font-size: 80px;
-    font-weight: 800;
+
 
 }
-.main-inicio h2, h3, h4{
+.text-center{
+    font-size: 50px;
+}
+ h2, h3, h4{
     text-align: center;
     margin: 20px 0;
     padding: 20px 10px;
     color:black;
-    text-shadow:0 0 3px #865DFF;
+    text-shadow:0 0 2px #865DFF;
     font-family:Libre Baskerville ;  
 }
+p{
+    font-family:verdana;
+    color:#191825;
+    font-size: 20px;
+}
+
 .main-inicio p{
     padding: auto;
     color: #191825;
@@ -106,12 +138,41 @@ color:#865DFF;
     font-size: 30px;
     font-weight: 100;   
 }
+.video{
+    display: grid;
+    justify-items: end;
+    align-content: space-around;
+}
+.video p{
+    display: grid;
+    font-family:Impact;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    .video{
+        justify-items: center;
+    }
+}
+
+footer p{
+margin-bottom: 20px;
+font-size: 10px;
+
+}
 footer{
     background-color:#CDF0EA;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
+@media (min-width:768px){
+    footer{
+flex-direction: row;
+    }
+}
+
 
 .fa, .whatsapp{
 width: 40px;
@@ -121,4 +182,109 @@ width: 40px;
     bottom: 20px;
     right: 50px;
 
+}
+.redes{
+display: flex;
+gap: 20px;
+margin-right: 30px;
+}
+
+/*GALERIA*/ 
+.uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho{
+    width: 100%;
+    max-width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.uno{
+    background-image: url(../img/foto-1.jpg);
+
+}
+.dos{
+    background-image: url(../img/foto-9.jpg);
+
+}
+.tres{
+    background-image: url(../img/foto-3.jpg);
+
+}
+.cuatro{
+    background-image: url(../img/foto-4.jpg);
+
+}
+.cinco{
+    background-image: url(../img/foto-5.jpg);
+
+}
+.seis{
+    background-image: url(../img/foto-6.jpg);
+
+}
+.siete{
+    background-image: url(../img/foto-7.jpg);
+
+}
+.ocho{
+    background-image: url(../img/foto-8.jpg);
+
+}
+@media (min-width:768px){
+    .fotos{
+        display: grid;
+        grid-template-areas:
+        "foto1 foto1 foto2 foto2 foto2" 
+        "foto3 foto3 foto2 foto2 foto2"
+        "foto3 foto3 foto2 foto2 foto2"
+        "foto4 foto5 foto6 foto7 foto8";
+         gap: 5px;
+    }
+.uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho{
+    height: 200px;
+}}
+.uno{
+    grid-area: foto1;
+}
+.dos{
+    grid-area: foto2;
+    align-self: start;
+    justify-self: stretch;
+    height: 100%;
+}
+.tres{
+    grid-area: foto3;
+}
+.cuatro{
+    grid-area: foto4;
+}
+.cinco{
+    grid-area: foto5;
+}
+.seis{
+    grid-area: foto6;
+}
+.siete{
+    grid-area: foto7;
+}
+.ochoo{
+    grid-area: foto8;
+}
+
+@media(min-width:450px){
+    #carouselExampleFade{
+        margin: 0 auto;
+        width: 70%; 
+        margin-top: 30px;
+    }
+.carousel-item img{
+    
+ height: 500px;
+}
+}
+/**cards inicio*/
+.padre-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
