@@ -281,10 +281,42 @@ margin-right: 30px;
  height: 500px;
 }
 }
+.texto-galeria p{
+    font-family: monospace;
+    margin-bottom: 20px;
+}
 /**cards inicio*/
 .padre-card{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+@media(min-width:768px){
+.padre-card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}}
+@media(min-width:992px){
+    .padre-card{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.card-inicio{
+    height: 450px;
+    background-color:#F0F696;
+}
+.card-img-top{
+    height: 250px;
+}
+.info{
+    margin: 0 auto;
+}
+.text h5{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-bottom: 20px;
+  background-color:#F5B5FC;
 }
