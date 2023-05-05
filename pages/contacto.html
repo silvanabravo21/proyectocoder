@@ -81,41 +81,28 @@
 <!--FORMULARIO DE CONTACTO-->
 <section>
     <form>
-        <div>
-            <p>Genero:</p>
-            <label for="masc">Masculino</label>
-            <input type="radio" name="genero" id="masc">
-     
-            <label for="fem">Femenino</label>
-            <input type="radio" name="genero" id="fem">
-     
-            <label for="otro">Otro</label>
-            <input type="radio" name="genero" id="otro">
-         </div>
-
-    <div>
-        <label for="nombre-apellido">Nombre y apellido</label>
-        <input type="text" id="nombre-apellido" required>
+      <h4>CONTACTANOS</h4>
+    <div >
+        <label for="nombre-apellido">Nombre y Apellido</label>
+        <input type="text" id="nombre-apellido" placeholder=" Ingresa Nombre y Apellido" required class="formulario">
     </div>
-
-    <div>
+    <div >
         <label for="telefono">Telefono</label>
-        <input type="tel" name="" id="telefono" placeholder="Ingresa numero de telefono">
+        <input type="tel" name="" id="telefono" placeholder="Ingresa numero de telefono" class="formulario">
     </div>
-
-    <div>
+    <div >
         <label for="e-mail">Correo electronico</label>
-        <input type="email" id="e-mail" required>
+        <input type="email" id="e-mail" placeholder="Ingresa tu e-mail" required class="formulario">
     </div>
 
-    <div>
+    <div >
         <label for="mensaje">Dejanos tu mensaje:</label>
-        <textarea id="mensaje" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
+        <textarea id="mensaje" cols="30" rows="10" placeholder="Escribe aqui." class="formulario"></textarea>
 </div>
 
-<div>
-       <input type="submit" value="Enviar formulario">
-       <input type="reset" value="Limpiar ">
+<div >
+       <input type="submit" value="Enviar formulario" class="boton">
+       <input type="reset" value="Limpiar " class="boton">
 </div>
     
 </form>
