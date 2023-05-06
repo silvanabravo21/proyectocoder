@@ -1,0 +1,94 @@
+.uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho{
+    width: 100%;
+    max-width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.uno{
+    background-image: url(../img/foto-1.jpg);
+
+}
+.dos{
+    background-image: url(../img/foto-9.jpg);
+
+}
+.tres{
+    background-image: url(../img/foto-3.jpg);
+
+}
+.cuatro{
+    background-image: url(../img/foto-4.jpg);
+
+}
+.cinco{
+    background-image: url(../img/foto-5.jpg);
+
+}
+.seis{
+    background-image: url(../img/foto-6.jpg);
+
+}
+.siete{
+    background-image: url(../img/foto-7.jpg);
+
+}
+.ocho{
+    background-image: url(../img/foto-8.jpg);
+
+}
+@media (min-width:768px){
+    .fotos{
+        display: grid;
+        grid-template-areas:
+        "foto1 foto1 foto2 foto2 foto2" 
+        "foto3 foto3 foto2 foto2 foto2"
+        "foto3 foto3 foto2 foto2 foto2"
+        "foto4 foto5 foto6 foto7 foto8";
+         gap: 5px;
+    }
+.uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho{
+    height: 200px;
+}}
+.uno{
+    grid-area: foto1;
+}
+.dos{
+    grid-area: foto2;
+    align-self: start;
+    justify-self: stretch;
+    height: 100%;
+}
+.tres{
+    grid-area: foto3;
+}
+.cuatro{
+    grid-area: foto4;
+}
+.cinco{
+    grid-area: foto5;
+}
+.seis{
+    grid-area: foto6;
+}
+.siete{
+    grid-area: foto7;
+}
+.ochoo{
+    grid-area: foto8;
+}
+@media(min-width:450px){
+    #carouselExampleFade{
+        margin: 0 auto;
+        width: 70%; 
+        margin-top: 30px;
+    }
+.carousel-item img{
+    
+ height: 500px;
+}
+}
+.texto-galeria p{
+    font-family: monospace;
+    margin-bottom: 20px;
+}

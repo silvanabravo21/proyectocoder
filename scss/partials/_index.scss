@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+    background-color:#FAF4B7;
+    color:rgb(3, 3, 3);
+    } 
+header{
+        display: flex;
+        top:0;
+        z-index: 1;
+        background-color: #f39adc;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        opacity: .9;
+        gap: 20px;
+
+@media (min-width:768px){
+            flex-direction: row;
+            position: sticky;
+    }
+.menu{
+        display: flex;
+        flex-direction: row;
+        gap: 30px; 
+@media(min-width: 500px){
+                flex-direction: row;
+                gap: 10px;
+        }        
+    }
+}
+.logo{
+        width: 100px;  
+    } 
+nav ul{
+        display: flex;
+        gap: 20px;
+        margin-right: 20px;
+        list-style: none;
+        text-decoration: none;
+a{
+            text-decoration: none;
+        }     
+     }
+    .enlaces{
+        color: #F0F696;
+        text-shadow:0 0 5px #191825;
+        border-radius: 2px;
+        background-color: #F5B5FC;
+        border: solid;
+        padding: 10px 15px;
+    }
+    .banner{
+            background-image: url(../img/foto-portada.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 500px;
+            width: 100%;
+    }  
+  
+    .inicio{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap: wrap;
+        img{
+            max-width: 100%;  
+            height: 320px;
+         }
+
+        }
+ h1{   
+ padding: 20px 30px;
+ font-family: Yellowtail;
+ text-align: center;
+ color:black;
+ font-size: 80px;
+}
+.text-center{
+    font-size: 50px;
+}
+ h2, h3, h4{
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 10px;
+    color:black;
+    text-shadow:0 0 2px #865DFF;
+    font-family:Libre Baskerville ;  
+}
+p{
+    font-family:verdana;
+    color:#191825;
+    font-size: 20px;
+}
+.video{
+    display: grid;
+    align-content: space-around;
+    margin-bottom: 20px;
+    justify-items: center;
+    @media (min-width:768px){
+        justify-items: center;
+    }    
+}
+.padre-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    @media(min-width:768px){
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
+        } 
+    @media(min-width:992px){
+                grid-template-columns: repeat(4,1fr);
+            }           
+        }
+.card-inicio{
+    height: 450px;
+    background-color:#F0F696;
+}
+.card-img-top{
+    height: 250px;
+}
+
+     
+     
+    
+    

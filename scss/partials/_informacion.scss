@@ -1,0 +1,40 @@
+.img-inicio{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #E384FF;
+    color: #191825;
+    gap: 30px;
+ @media(max-width:500px){
+        .img-inicio{
+         flex-wrap: wrap;
+        } 
+     }    
+}
+main img{
+    width: 350px;
+justify-content: center; 
+}
+.main-inicio p{
+    padding: auto;
+    color: #191825;
+    font-family: Dancing Script;
+font-size: 30px;
+font-weight: 100;
+}
+.texto-grande h3, h4{
+    padding: 20px 10px;  
+color:#865DFF;
+    font-size: 30px;
+    font-weight: 100;   
+}
+.info{
+    margin: 0 auto;
+}
+.text h5{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 20px;
+    background-color:#F5B5FC;
+  }
