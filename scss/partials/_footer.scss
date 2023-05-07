@@ -1,5 +1,6 @@
 footer{
-    background-color:#CDF0EA;
+  background-image: linear-gradient( #efa0f8, #CDF0EA);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,7 @@ footer{
      }         
     @media (min-width:768px){
         flex-direction: row;
-        }               
+        }                    
 }
 
 

@@ -23,8 +23,8 @@ header{
     }
 .menu{
         display: flex;
-        flex-direction: row;
-        gap: 30px; 
+        flex-direction: column;
+        
 @media(min-width: 500px){
                 flex-direction: row;
                 gap: 10px;
@@ -60,7 +60,13 @@ a{
             height: 500px;
             width: 100%;
     }  
-  
+  a:hover{
+    background-color: #f39adc;
+    transition: all .5s;
+ }
+ a:active{
+    background-color: #eef775;
+ }
     .inicio{
         display:flex;
         justify-content:center;
@@ -125,8 +131,22 @@ p{
 .card-img-top{
     height: 250px;
 }
-
-     
-     
+.titulo-dos{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+ }
+ 
+ 
+ @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+   
     
     

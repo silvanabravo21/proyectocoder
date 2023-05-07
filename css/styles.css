@@ -27,8 +27,7 @@ header {
 }
 header .menu {
   display: flex;
-  flex-direction: row;
-  gap: 30px;
+  flex-direction: column;
 }
 @media (min-width: 500px) {
   header .menu {
@@ -68,6 +67,15 @@ nav ul a {
   background-attachment: fixed;
   height: 500px;
   width: 100%;
+}
+
+a:hover {
+  background-color: #f39adc;
+  transition: all 0.5s;
+}
+
+a:active {
+  background-color: #eef775;
 }
 
 .inicio {
@@ -148,6 +156,20 @@ p {
   height: 250px;
 }
 
+.titulo-dos {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .uno, .dos, .tres, .cuatro, .cinco, .seis, .siete, .ocho {
   width: 100%;
   max-width: 100%;
@@ -325,6 +347,7 @@ main img {
 }
 .curso button:hover {
   background-color: #191825;
+  transition: all 1s;
 }
 .curso button:active {
   background-color: #E384FF;
@@ -401,6 +424,11 @@ input, textarea {
   width: 280px;
 }
 
+.formulario:hover {
+  border-color: #E384FF;
+  transition: all 0.5s;
+}
+
 .formulario:focus {
   border-color: #E384FF;
 }
@@ -415,7 +443,7 @@ input, textarea {
 }
 
 footer {
-  background-color: #CDF0EA;
+  background-image: linear-gradient(#efa0f8, #CDF0EA);
   display: flex;
   flex-direction: column;
   align-items: center;
