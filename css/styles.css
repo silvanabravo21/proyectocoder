@@ -61,7 +61,7 @@ nav ul a {
 }
 
 .banner {
-  background-image: url(../img/foto-portada.jpg);
+  background-image: url(../img/foto-portada.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
