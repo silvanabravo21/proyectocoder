@@ -11,7 +11,8 @@ header{
         top:0;
         z-index: 1;
         background-color: #f39adc;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-direction: row;
         width: 100%;
         align-items: center;
         opacity: .9;
@@ -21,16 +22,16 @@ header{
             flex-direction: row;
             position: sticky;
     }
-.menu{
-        display: flex;
-        flex-direction: column;
+header .menu {
+    flex-direction: row;
+    gap: 10px;
+}
         
 @media(min-width: 500px){
                 flex-direction: row;
                 gap: 10px;
         }        
     }
-}
 .logo{
         width: 100px;  
     } 
