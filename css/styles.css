@@ -11,64 +11,72 @@ body {
 header {
   display: flex;
   top: 0;
-  z-index: 1;
   background-color: #f39adc;
   justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
   align-items: center;
   opacity: 0.9;
-  gap: 20px;
+  padding: 15px 10px;
+}
+header nav .container-fluid {
+  background-color: #f39adc;
+  text-shadow: 0 0 5px #191825;
+}
+header nav .navbar-nav {
+  background-color: #FAF4B7;
+}
+@media (min-width: 992) {
+  header nav .navbar-nav {
+    background-color: #f39adc;
+  }
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+}
+header nav ul .enlaces {
+  color: #F0F696;
+  text-shadow: 0 0 5px #191825;
+}
+@media (min-width: 500px) {
+  header nav ul .enlaces {
+    flex-direction: row;
+    position: sticky;
+    color: #F0F696;
+    text-shadow: 0 0 5px #191825;
+    border-radius: 2px;
+    background-color: #F5B5FC;
+    border: solid;
+    padding: 10px 15px;
+  }
+}
+header nav a {
+  text-decoration: none;
 }
 @media (min-width: 768px) {
-  header {
+  header nav {
     flex-direction: row;
     position: sticky;
   }
 }
-header .menu {
-  flex-direction: row;
-  gap: 10px;
-}
-@media (min-width: 500px) {
-  header {
-    flex-direction: row;
-    gap: 10px;
-  }
-}
 
 .logo {
-  width: 100px;
+  width: 70px;
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
-  margin-right: 20px;
-  list-style: none;
-  text-decoration: none;
+@media (min-width: 500px) {
+  .banner {
+    background-image: url(/img/foto-portada.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+  }
 }
-nav ul a {
-  text-decoration: none;
-}
-
-.enlaces {
-  color: #F0F696;
-  text-shadow: 0 0 5px #191825;
-  border-radius: 2px;
-  background-color: #F5B5FC;
-  border: solid;
-  padding: 10px 15px;
-}
-
-.banner {
-  background-image: url(../img/foto-portada.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 500px;
-  width: 100%;
-}
-
 a:hover {
   background-color: #f39adc;
   transition: all 0.5s;
@@ -121,6 +129,7 @@ p {
   align-content: space-around;
   margin-bottom: 20px;
   justify-items: center;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .video {
@@ -138,11 +147,13 @@ p {
   .padre-card {
     display: grid;
     justify-items: center;
+    align-items: flex-start;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 992px) {
   .padre-card {
+    align-items: flex-start;
     grid-template-columns: repeat(4, 1fr);
   }
 }
