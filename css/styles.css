@@ -13,8 +13,8 @@ header {
   top: 0;
   background-color: #f39adc;
   justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: stretch;
   opacity: 0.9;
   padding: 15px 10px;
 }
@@ -126,7 +126,7 @@ p {
 
 .video {
   display: grid;
-  align-content: space-around;
+  align-content: center;
   margin-bottom: 20px;
   justify-items: center;
   width: 100%;
@@ -154,7 +154,7 @@ p {
 @media (min-width: 992px) {
   .padre-card {
     align-items: flex-start;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -279,6 +279,10 @@ p {
 .texto-galeria p {
   font-family: monospace;
   margin-bottom: 20px;
+}
+
+main {
+  width: 100%;
 }
 
 .img-inicio {
