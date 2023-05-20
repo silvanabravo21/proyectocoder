@@ -1,15 +1,17 @@
+
 .curso {
     background-color: white;
     padding: 30px;
     width: 250px;
-    max-width: 100%;
     border: solid 3px #F5B5FC;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     img{
-        height: 290px;
-        width: 80%;
+        height: 140px;
+        width: 50%;
+    
     }
     h3{
         background-color: #f39adb62;
@@ -18,6 +20,7 @@
     }
     p{
         margin-top: 20px;
+        font-size: 15px;
     }  
     button{
         background-color: #865DFF;
