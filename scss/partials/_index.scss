@@ -15,7 +15,7 @@ header{
         align-items: stretch;
         opacity: .9;
         padding: 15px 10px;
-    
+
        
         nav{
           .container-fluid{ 
@@ -68,19 +68,16 @@ header{
 .logo{
         width: 70px;  
     } 
+    @media(min-width:768px){
+    .banner {
+        background-image: url(../img/foto-portada.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 500px;
+        width: 100%;
+    }}
 
-
- 
-@media (min-width:500px){
-    .banner{
-            background-image: url(/img/foto-portada.webp
-            );
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            height: 500px;
-            width: 100%;
-    }  }
   a:hover{
     background-color: #f39adc;
     transition: all .5s;
@@ -109,7 +106,9 @@ header{
     font-size:80px;
  }
 }
-
+.clase-main{
+    display: grid;
+}
 h1{
     padding: 30px 25px;
     text-align: center;
@@ -140,8 +139,12 @@ p{
     margin-bottom: 20px;
     justify-items: center;
     width: 100%;
+
     @media (min-width:768px){
-        justify-items: center;
+        display: flex;
+        height: 320px;
+       justify-content: flex-end;
+       width: 80%;
     }    
 }
 .padre-card{

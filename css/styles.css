@@ -67,9 +67,9 @@ header nav a {
   width: 70px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .banner {
-    background-image: url(/img/foto-portada.webp);
+    background-image: url(../img/foto-portada.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -110,6 +110,10 @@ a:active {
   }
 }
 
+.clase-main {
+  display: grid;
+}
+
 h1 {
   padding: 30px 25px;
   text-align: center;
@@ -147,7 +151,10 @@ p {
 }
 @media (min-width: 768px) {
   .video {
-    justify-items: center;
+    display: flex;
+    height: 320px;
+    justify-content: flex-end;
+    width: 80%;
   }
 }
 
@@ -281,16 +288,15 @@ p {
 }
 
 @media (min-width: 450px) {
-  #carouselExanpleFade #carouselExampleFade {
+  #carouselExampleFade {
     margin: 0 auto;
     width: 70%;
     margin-top: 30px;
   }
-  #carouselExanpleFade .carousel-item img {
+  .carousel-item img {
     height: 500px;
   }
 }
-
 .texto-galeria p {
   font-family: monospace;
   margin-bottom: 20px;
@@ -307,11 +313,12 @@ main {
   justify-content: space-around;
   background-color: #E384FF;
   color: #191825;
+  margin-bottom: 30px;
   gap: 30px;
 }
-@media (max-width: 500px) {
-  .img-inicio .img-inicio {
-    flex-wrap: wrap;
+@media (min-width: 768px) {
+  .img-inicio {
+    flex-direction: row;
   }
 }
 
@@ -420,13 +427,15 @@ main img {
 
 #carouselExampleCaptions {
   display: flex;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 30px;
 }
-
-#carouselExampleFade {
-  position: sticky;
+@media (min-width: 768) {
+  #carouselExampleCaptions {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 /*formulario*/

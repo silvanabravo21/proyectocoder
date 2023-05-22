@@ -5,11 +5,12 @@
     justify-content: space-around;
     background-color: #E384FF;
     color: #191825;
+    margin-bottom: 30px;
     gap: 30px;
- @media(max-width:500px){
-        .img-inicio{
-         flex-wrap: wrap;
-        } 
+ @media(min-width:768px){
+        flex-direction: row;
+      
+        
      }    
 }
 main img{
@@ -20,8 +21,8 @@ justify-content: center;
     padding: auto;
     color: #191825;
     font-family: Dancing Script;
-font-size: 30px;
-font-weight: 100;
+    font-size: 30px;
+    font-weight: 100;
 }
 .texto-grande h3, h4{
     padding: 20px 10px;  

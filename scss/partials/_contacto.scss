@@ -7,14 +7,17 @@
 }
 #carouselExampleCaptions{
     display: flex;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 30px;
+    @media(min-width:768) {
+        width: 80%;
+        margin: 0 auto; 
+        
+    }
     
 }
-#carouselExampleFade{
-    position: sticky;
-}
+
 /*formulario*/
 .main-contacto{
     display: flex;
